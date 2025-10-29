@@ -4,7 +4,7 @@ echo "pleasse enter username::"
 
 read username #here username is variable
 
-echo"please enter password::"
+echo "please enter password::"
 
 read password
 
