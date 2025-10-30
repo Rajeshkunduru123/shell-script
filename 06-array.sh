@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MOVIES=("RRR" "DJ" "RR")
+MOVIES=("RRR" "DJ" "Raji")
 
 # size of above array is 3.
 # index are 0,1,2
@@ -9,4 +9,4 @@ MOVIES=("RRR" "DJ" "RR")
 
 echo "FIrst Movie is: ${MOVIES[0]}"
 echo "FIrst Movie is: ${MOVIES[1]}"
-echo "FIrst Movie is: ${MOVIES[0]}"
+echo "FIrst Movie is: ${MOVIES[@]}"
