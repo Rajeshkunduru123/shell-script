@@ -7,5 +7,5 @@ echo "Current working of directory: $PWD"
 echo "which user is running this script: $USER"
 echo "Hostname: $HOSTNAME"
 echo "Process ID of the current shell script: $$"
-slepp 60
+slepp 60 &
 echo "Process ID last background command: $!"
