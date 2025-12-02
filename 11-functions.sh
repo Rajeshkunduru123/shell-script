@@ -1,25 +1,18 @@
 #!/bin/bash
 
-
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-SCRIPT_NAME=$(echo $0 | cut -d "." -fi)
-LOGFILE=/temp/$SCRIPT_NAME-$TIMESTAMP.log
-
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
+LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 VALIDATE(){
-    if [ $1 -ne 0 ]
-        then 
-
-        echo " $2....FAILURE"
+   if [ $1 -ne 0 ]
+   then
+        echo "$2...FAILURE"
         exit 1
-        else 
-        echo "$2.....SUCCESS" 
-        fi
-
-
-        echo "Exit status: $1"
-        echo "What are you doing: $2"
+    else
+        echo "$2...SUCCESS"
+    fi
 }
 
 if [ $USERID -ne 0 ]
@@ -31,10 +24,7 @@ else
 fi
 
 dnf install mysql -y &>>$LOGFILE
-
 VALIDATE $? "Installing MySQL"
 
 dnf install git -y &>>$LOGFILE
-
-VALIDATE $? "Installing git"
-
+VALIDATE $? "Installing Git"
