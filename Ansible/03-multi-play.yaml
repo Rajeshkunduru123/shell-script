@@ -1,0 +1,13 @@
+- name: play-1
+  hosts: localhost
+  tasks:
+  - name: play-1 and task-1
+    ansile.builtin.debug:
+    msg: "hello i am from play-1 and task-1"
+
+- name: play-1
+  hosts: localhost
+  tasks:
+  - name: play-1 and task-1
+    ansile.builtin.debug:
+    msg: "hello i am from play-1 and task-1"
