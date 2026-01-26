@@ -1,6 +1,6 @@
 - name: data types
   hosts: localhost
-  vasrs: 
+  vars: 
     course: devops with aws #string
     tools: #list
     - linux
