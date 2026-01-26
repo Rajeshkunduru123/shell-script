@@ -14,5 +14,3 @@
       wishes: "morning from task variable"
     ansible.builtin.debug:
       msg: "hello, good {{wishes}}"
-  tasks:
-  - name
