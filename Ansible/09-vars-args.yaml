@@ -1,4 +1,4 @@
-- nam: variables from arguments
+- name: variables from arguments
   hosts: localhost
   tasks:
   - name: get from args
